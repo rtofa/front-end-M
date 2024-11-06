@@ -1,0 +1,29 @@
+<h2>Pesquisa</h2>
+
+<form [formGroup]="pesquisaForm" (ngSubmit)="pesquisar()">
+  <div class="campo-selecao">
+    <label for="pais">País:</label>
+    <select id="pais" formControlName="pais" (change)="carregarEstados()">
+      <option value="">Selecione um país</option>
+      <option *ngFor="let pais of paises" [value]="pais">{{ pais }}</option>
+    </select>
+  </div>
+
+  <div class="campo-selecao">
+    <label for="estado">Estado:</label>
+    <select id="estado" formControlName="estado" (change)="carregarCidades()" [disabled]="!pesquisaForm.get('pais')?.value">
+      <option value="">Selecione um estado</option>
+      <option *ngFor="let estado of estados" [value]="estado">{{ estado }}</option>
+    </select>
+  </div>
+
+  <div class="campo-selecao">
+    <label for="cidade">Cidade:</label>
+    <select id="cidade" formControlName="cidade" [disabled]="!pesquisaForm.get('estado')?.value">
+      <option value="">Selecione uma cidade</option>
+      <option *ngFor="let cidade of cidades" [value]="cidade">{{ cidade }}</option>
+    </select>
+  </div>
+
+  <button type="submit" [disabled]="!pesquisaForm.valid">Pesquisar</button>
+</form>

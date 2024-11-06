@@ -1,0 +1,123 @@
+/*.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+/*logotipo
+.item01-header > h1{
+    font: 500 64px var(--font-logo);
+}
+/*primeira lista
+.item02-header > ul{
+    display: flex;
+}
+.item02-header > ul li{
+    font: 400 32px var(--font-botoes);
+    list-style-type: none;
+}
+/*espaçamento da lista
+#distancia-list{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+/*segunda lista
+.item03-header > ul{
+    display: flex;
+}
+.item03-header > ul li{
+    font: 400 32px var(--font-botoes);
+    list-style-type: none;
+    padding: 10px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    height: 115px;
+
+    background-color: var(--background-back);
+}
+.header > p {
+    color: var(--background-white);
+    font: 200 20px var(--font-principal);
+}*/
+/* Estilos para o cabeçalho */
+/* Estilos para o cabeçalho */
+.container-header {
+    display: flex; 
+    justify-content: space-between; /* Alinha os itens do cabeçalho às extremidades */
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 20px 40px;
+    background-color: #2d3e50; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar o cabeçalho */
+}
+
+.item01-header h1 {
+    font-size: 30px; /* Tamanho da fonte para o nome */
+    font-weight: bold;
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    margin: 0;
+    color: #fff;
+}
+
+.item02-header ul {
+    display: flex; /* Exibe os links em linha */
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+.item02-header li {
+    margin-left: 20px; /* Espaçamento entre os itens */
+}
+
+.item02-header li {
+    background-color: transparent; /* Sem fundo */
+    border: 2px solid #fff; /* Borda branca */
+    padding: 10px 20px; /* Preenchimento do botão */
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer; /* Aponta o cursor quando passar sobre o botão */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+.item02-header li:hover {
+    background-color: #00bcd4; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de levitação ao passar o mouse */
+}
+
+.item02-header li a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #fff; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte dos links */
+}
+
+.item02-header li a:hover {
+    color: #fff; /* Garante que a cor do texto permaneça branca ao passar o mouse */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .container-header {
+        flex-direction: column; /* Coloca os itens do cabeçalho em coluna */
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .item02-header ul {
+        flex-direction: column; /* Coloca os links em coluna */
+        margin-top: 10px;
+    }
+
+    .item02-header li {
+        margin-left: 0; /* Remove a margem entre os links */
+        margin-top: 10px; /* Adiciona espaçamento entre os itens */
+    }
+
+    .item01-header h1 {
+        font-size: 24px; /* Ajusta o tamanho da fonte em dispositivos móveis */
+    }
+}

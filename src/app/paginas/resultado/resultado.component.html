@@ -1,0 +1,14 @@
+<!-- resultado.component.html -->
+<h2>Resultados da Pesquisa</h2>
+
+<div *ngIf="resultados.length > 0; else semResultados">
+  <ul>
+    <li *ngFor="let resultado of resultados">
+      {{ resultado }}
+    </li>
+  </ul>
+</div>
+
+<ng-template #semResultados>
+  <p>Nenhum resultado encontrado para a pesquisa selecionada.</p>
+</ng-template>

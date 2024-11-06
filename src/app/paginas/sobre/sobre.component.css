@@ -1,0 +1,60 @@
+/* Estilos gerais para o título */
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilos gerais para o conteúdo da seção "Sobre-nós" */
+.sobre-nos {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    line-height: 1.6;
+    color: #495057;
+    text-align: justify;
+}
+
+/* Adicionando um pouco de padding e margin para o conteúdo */
+.sobre-nos p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilização do parágrafo */
+.sobre-nos p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6c757d;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Adicionando uma borda fina e um leve sombreamento */
+.sobre-nos {
+    border: 1px solid #e0e0e0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    .sobre-nos {
+        padding: 15px;
+    }
+
+    .sobre-nos p {
+        font-size: 16px;
+    }
+}

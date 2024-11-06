@@ -1,0 +1,30 @@
+.footer {
+    background-color: #2d3e50;
+    /* Cor de fundo igual ao cabeçalho */
+    color: #fff;
+    /* Cor do texto branco */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 20px;
+    /* Preenchimento confortável */
+    font-size: 14px;
+    /* Tamanho da fonte menor */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para destacar o rodapé */
+    /*margin-top: 30px; /* Espaço superior para dar distância do conteúdo principal */
+}
+
+.footer p {
+    margin: 0;
+    /* Remove a margem padrão do parágrafo */
+}
+
+/* Responsividade: Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px;
+        /* Ajusta o padding para telas pequenas */
+        font-size: 12px;
+        /* Diminui o tamanho da fonte em telas menores */
+    }
+}

@@ -1,0 +1,167 @@
+/* Container principal */
+.div-principal-01 {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Seção de apresentação */
+.container-apresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.item01-apresentacao img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    /* Limita a altura da imagem */
+}
+
+.item02-apresentacao {
+    max-width: 500px;
+    text-align: left;
+}
+
+.item02-apresentacao h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.item02-apresentacao p {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.item02-apresentacao a {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.item02-apresentacao a :hover {
+    background-color: #008c99;
+    transform: scale(1.05);
+    /* Efeito de zoom */
+    text-decoration: none;
+}
+
+/* Divisórias entre seções */
+#divisoria-apre,
+#divisoria-pequena {
+    height: 10px;
+    background-color: #f1f1f1;
+    margin-top: 30px;
+}
+
+/* Seção de depoimentos */
+.div-principal-02 {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.container-depoimento-fora {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.container-depoimento-fora h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 40px;
+}
+
+.container-depoimento-dentro {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.depoimento-dentro {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.depoimento-dentro:hover {
+    transform: translateY(-5px);
+    /* Efeito de levitação */
+}
+
+.item-depoimento {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.depo-part1 .imagem-depoimento img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.depo-part1 h3 {
+    font-size: 18px;
+    color: #343a40;
+}
+
+.depo-part2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.depo-part2 p {
+    font-size: 16px;
+    color: #6c757d;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item02-apresentacao {
+        margin-top: 20px;
+    }
+
+    .item02-apresentacao h2 {
+        font-size: 26px;
+    }
+
+    .container-depoimento-dentro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .depoimento-dentro {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

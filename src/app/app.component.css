@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@500&family=Roboto:wght@400;500&display=swap');
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+li{
+  font: 300 20px "Roboto", sans-serif;
+  margin-left: 20px; 
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a{
+  font: 300 20px "Roboto", sans-serif;
+  margin-left: 20px; 
+  text-decoration: none;
+}

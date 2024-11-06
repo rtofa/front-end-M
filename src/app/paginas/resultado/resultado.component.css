@@ -1,0 +1,70 @@
+/* Estilos gerais para o componente de resultados */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Lista de resultados */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+    color: #343a40;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o item da lista */
+ul li:hover {
+    background-color: #00bcd4;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mensagem quando não houver resultados */
+#semResultados {
+    text-align: center;
+    font-size: 18px;
+    color: #6c757d;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+/* Estilização do item de "sem resultados" */
+#semResultados p {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #semResultados p {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
